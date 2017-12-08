@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -98,34 +98,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 61px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 
 .section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 </style>
 
@@ -220,7 +220,7 @@ $(document).ready(function () {
 <h1>Data</h1>
 <p>Our data consist of breakdown and delay information of school buses in New York during 2015-2016, 2016-2017 and 2017-2018 school years (except July, August and September), including 168462 observations of 20 variables about the occur and inform time, delay duration, breakdown and delay reasons, and other operation information.</p>
 <p>It is real time updated and can be downloaded from the NYC Open Data.</p>
-<p>Find our data [here].(Bus_Breakdown_and_Delays.csv)</p>
+<p>Find our data <a href="Bus_Breakdown_and_Delays.csv">here</a>.</p>
 </div>
 <div id="appraoches" class="section level1">
 <h1>Appraoches</h1>
@@ -233,7 +233,11 @@ $(document).ready(function () {
 <div id="results" class="section level1">
 <h1>Results</h1>
 <ul>
-<li>The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of inflexibility.</li>
+<li><p>The school bus delay occurs mainly focucs on 7:00-8:00am and 2:00-3:00pm, which are the commonsensible rush hours.</p></li>
+<li><p>The delay happens most frequently in Brooklyn and Bronx, and happens least frequently in Staten Island and Westchester, indicating the traffic condition of these boros.</p></li>
+<li><p>The most commom known reasons for breakdown are mechanical problem, won’t start and flat tire. The most commom known reason for delay is heavy traffic.</p></li>
+<li><p>Accident and mechanical problem tend to cause the longest delay duration while delayed by school and heavy traffic tend to have the shortest delay duration.</p></li>
+<li><p>The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of inflexibility.</p></li>
 </ul>
 </div>
 
