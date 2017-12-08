@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,12 +31,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -227,20 +225,28 @@ $(document).ready(function () {
 <div id="appraoches" class="section level1">
 <h1>Appraoches</h1>
 <ul>
-<li><p>Clean and prepare the data by string processing and data type converting</p></li>
-<li><p>Describe the data by barplots, scatter plot over time, boxplots and tables</p></li>
-<li><p>Build up a logistics regression model for predicting the duration of delay</p></li>
+<li><p>Clean and prepare the data for further analysis by string processing and data type converting</p></li>
+<li><p>Describe the data according to time, reasons, companies and other categorical variables we are interested in, visualized by barplots, scatter plots and tables</p></li>
+<li><p>Build up and validate a logistics regression model to predict the range of delay duration based on the predictors we select</p></li>
+</ul>
+</div>
+<div id="visualizations" class="section level1">
+<h1>Visualizations</h1>
+<ul>
+<li>Our plotly dashboard link is <a href="nyc_bus_dashboard.html">here</a></li>
 </ul>
 </div>
 <div id="results" class="section level1">
 <h1>Results</h1>
 <ul>
-<li><p>The school bus delay occurs mainly focucs on 7:00-8:00am and 2:00-3:00pm, which are the commonsensible rush hours.</p></li>
-<li><p>The delay happens most frequently in Brooklyn and Bronx, and happens least frequently in Staten Island and Westchester, indicating the traffic condition of these boros.</p></li>
-<li><p>The most commom known reasons for breakdown are mechanical problem, won’t start and flat tire. The most commom known reason for delay is heavy traffic.</p></li>
-<li><p>Accident and mechanical problem tend to cause the longest delay duration while delayed by school and heavy traffic tend to have the shortest delay duration.</p></li>
+<li><p>The occurence of school bus delays mainly centers around <em>7:00-8:00am</em> and <em>2:00-3:00pm</em>, which are the commonsensible rush hours.</p></li>
+<li><p>The boros which have the most frequent delays are <em>Brooklyn</em> and <em>Bronx</em>.The boros which have the least frequent delays are <em>Staten Island</em> and <em>Westchester</em>. This result indicates the traffic condition of these boros.</p></li>
+<li><p>The most common reasons for breakdown are <em>mechanical problem</em>, <em>won’t start</em> and <em>flat tire</em>. The most common reason for delay is <em>heavy traffic</em>.</p></li>
+<li><p><em>Accident</em> and <em>mechanical problem</em> tend to cause the longest delay duration while <em>delayed by school</em> and <em>heavy traffic</em> tend to have the shortest delay duration.</p></li>
+<li><p><em>“FORTUNA BUS COMPANY”</em> has the longest reaction time of three and a half hours, followed by <em>“R &amp; C TRANSIT, INC.”</em>, <em>“SMART PICK”</em> and <em>“PENNY TRANSPORTATION”</em>.</p></li>
+<li><p>The ratio of work faults(reaction time is negative or more than one day) is quite small generally. The company <em>“IC BUS INC.”</em> has the largest ratio of work faults, followed by <em>“GRANDPA`S BUS CO., INC.”</em> and <em>“ACME BUS CORP.”</em>.</p></li>
 <li><p>The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of inflexibility.</p></li>
-<li><p>The precidted accuracies of 10 samples we created is showed above. We can see the the prediction accuracy is around 62%.</p></li>
+<li><p>In our logistics regression model, we can predict the range of duration of delay based on the predictors we choose. Our model has prediction accuracy of apporximately 62%.</p></li>
 </ul>
 </div>
 
