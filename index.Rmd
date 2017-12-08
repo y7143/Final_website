@@ -1,11 +1,11 @@
 ---
-title: "Holy cow!"
+title: "Operation Status Analysis and Delay Prediction of NYC School Bus "
 ---
 
-### I have a webpage!
+# Overview of the project 
 
-And I can put all kinds of stuff on it!
+For many students, school bus is the only available method of transportation to and from school. Improving the operation condition and safety of school bus has always been an important topic. 
 
-My favorite website is [google](http://www.google.com)
+The Office of Pupil Transportation(OPT) administers school bus service to New York City schools for students attending both public and non-public schools, and it aims to use the Bus Breakdown and Delay system to inform parents who call with questions regarding bus service. The Bus Breakdown and Delay system collects information from school bus vendors operating out in the field in real time about the occur and inform time, delay duration, breakdown and delay reasons, and other operation information.
 
-Here is a [about](about.html)
+Using the data collected by the Bus Breakdown and Delay System of OPT, our project focuses on exploratory analyses and anticipation. Within the exploratory analysis, we compare different school bus companies by delay duration, reaction time and work fault. We also compare route services by the odds of notifying and the effect of route planning. Within the anticipation part, we build a model to predict the delay duration. Office of Pupil Transportation would be able to get the expected delay duration with this model and inform the parents who call.
