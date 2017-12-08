@@ -29,6 +29,14 @@ Find our data [here](Bus_Breakdown_and_Delays.csv).
 
 # Results
 
+* The school bus delay occurs mainly focucs on 7:00-8:00am and 2:00-3:00pm, which are the commonsensible rush hours. 
+
+* The delay happens most frequently in Brooklyn and Bronx, and happens least frequently in Staten Island and Westchester, indicating the traffic condition of these boros.
+
+* The most commom known reasons for breakdown are mechanical problem, won’t start and flat tire. The most commom known reason for delay is heavy traffic.
+
+* Accident and mechanical problem tend to cause the longest delay duration while delayed by school and heavy traffic tend to have the shortest delay duration.
+
 * The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of  inflexibility.
 
 
