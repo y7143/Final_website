@@ -6,7 +6,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Visualization"
-      href: mailto:<you@youremail.com>
+      href: nyc_bus_dashboard.html
     
   right:
     - text: "About"
