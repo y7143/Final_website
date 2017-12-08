@@ -39,6 +39,6 @@ Find our data [here](Bus_Breakdown_and_Delays.csv).
 
 * The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of inflexibility.
 
-
+* The precidted accuracies of 10 samples we created is showed above. We can see the the prediction accuracy is around 62%.
 
 

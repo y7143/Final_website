@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,10 +31,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -180,12 +182,12 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="about.html">About</a>
+  <a href="nyc_bus_dashboard.html">Visualization</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">Visualization</a>
+  <a href="about.html">About</a>
 </li>
 <li>
   <a href="Final_project.html">Report</a>
@@ -238,6 +240,7 @@ $(document).ready(function () {
 <li><p>The most commom known reasons for breakdown are mechanical problem, won’t start and flat tire. The most commom known reason for delay is heavy traffic.</p></li>
 <li><p>Accident and mechanical problem tend to cause the longest delay duration while delayed by school and heavy traffic tend to have the shortest delay duration.</p></li>
 <li><p>The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of inflexibility.</p></li>
+<li><p>The precidted accuracies of 10 samples we created is showed above. We can see the the prediction accuracy is around 62%.</p></li>
 </ul>
 </div>
 
