@@ -1,15 +1,16 @@
 ---
-title: "nyc_bus_dashboard"
-author: "Mengqi Zhu & Shuang Wu & Yutian Mu & Dong Yuan"
-date: "December 7, 2017"
 output: 
-  flexdashboard::flex_dashboard:
+flexdashboard::flex_dashboard:
+    source_code: embed
     orientation: columns
+    theme: journal
     vertical_layout: fill
+    navbar:
+      - { title: "Home", href: "https://y7143.github.io/final_website/", align: right }
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 library(tidyverse)
 library(janitor)
 library(stringr)
@@ -80,9 +81,10 @@ nyc_bus <-
   select(school_year:bus_company_name,company_name,everything())
 ```
 
+Dashboard {.tabset .tabset-fade}
+-----------------------------------------------------------------------
 
-
-#Breakdwon and delay count over time
+### Breakdwon and delay count over time
 
 ```{r, echo=FALSE}
 #Delay count over time by boros
@@ -104,7 +106,7 @@ ggplotly(plotly_over_time)
 ```
 
 
-#Barplot for delay duration by reason
+### Barplot for delay duration by reason
 
 ```{r, echo=FALSE}
 plotly_barplot <- 
@@ -123,7 +125,7 @@ plotly_barplot <-
 ggplotly(plotly_barplot)
 ```
 
-#Boxplot for delay duration by company
+### Boxplot for delay duration by company
 
 ```{r, echo=FALSE}
 company_level <- 
