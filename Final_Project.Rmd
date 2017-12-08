@@ -43,6 +43,7 @@ The initial goal of our project was to find out the operation status of NYC scho
 
 
 #2. Data and methods
+
 Data consist of breakdown and delay information of schoolbus in New York during 2015-2016, 2016-2017 and 2017-2018 school years (except July, August and September), including occur time, inform time, delay duration, reason, bus company that provided service, run type, route and boro about breakdown and delay. These real time updated data are stored in Bus_Breakdown_and_Delays.csv, which was downloaded from the NYC Open Data. 
 
 
@@ -112,6 +113,7 @@ nyc_bus <-
 
 
 #3. Results
+
 ##3.1 Description
 For this part, we want to find out some basic description of the variables we are interested in, including breakdown and delay distribution during the day, main reasons for school bus breakdowns and delays and average delay duration by reason.
 

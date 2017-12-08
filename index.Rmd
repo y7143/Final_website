@@ -32,9 +32,10 @@ Find our data [here](Bus_Breakdown_and_Delays.csv).
 
 * Build up and validate a logistics regression model to predict the range of delay duration based on the predictors we select
 
+
 # Visualizations
 
-* Our plotly dashboard link is [here](nyc_bus_dashboard.html)
+* Our plotly dashboard is [here](nyc_bus_dashboard.html)
 
 
 # Results
