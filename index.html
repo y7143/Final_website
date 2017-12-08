@@ -11,7 +11,7 @@
 
 
 
-<title>Holy cow!</title>
+<title>Operation Status Analysis and Delay Prediction of NYC School Bus</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,8 +20,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -31,12 +31,10 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
 }
 </script>
 
@@ -207,16 +205,24 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Holy cow!</h1>
+<h1 class="title toc-ignore">Operation Status Analysis and Delay Prediction of NYC School Bus</h1>
 
 </div>
 
 
-<div id="i-have-a-webpage" class="section level3">
-<h3>I have a webpage!</h3>
-<p>And I can put all kinds of stuff on it!</p>
-<p>My favorite website is <a href="http://www.google.com">google</a></p>
-<p>Here is a <a href="about.html">about</a></p>
+<div id="overview-of-the-project" class="section level1">
+<h1>Overview of the project</h1>
+<p>For many students, school bus is the only available method of transportation to and from school. Improving the operation condition and safety of school bus has always been an important topic.</p>
+<p>The Office of Pupil Transportation(OPT) administers school bus service to New York City schools for students attending both public and non-public schools, and it aims to use the Bus Breakdown and Delay system to inform parents who call with questions regarding bus service. The Bus Breakdown and Delay system collects information from school bus vendors operating out in the field in real time about the occur and inform time, delay duration, breakdown and delay reasons, and other operation information.</p>
+<p>Using the data collected by the Bus Breakdown and Delay System of OPT, our project focuses on exploratory analyses and anticipation. Within the exploratory analysis, we compare different school bus companies by delay duration, reaction time and work fault. We also compare route services by the odds of notifying and the effect of route planning. Within the anticipation part, we build a model to predict the delay duration. Office of Pupil Transportation would be able to get the expected delay duration with this model and inform the parents who call.</p>
+</div>
+<div id="appraoches" class="section level1">
+<h1>Appraoches</h1>
+<ul>
+<li><p>Clean and prepare the data by string processing and data type converting</p></li>
+<li><p>Describe the data by barplots, scatter plot over time, boxplots and tables</p></li>
+<li><p>Build up a logistics regression model for predicting the duration of delay</p></li>
+</ul>
 </div>
 
 

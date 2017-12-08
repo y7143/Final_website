@@ -10,6 +10,15 @@ The Office of Pupil Transportation(OPT) administers school bus service to New Yo
 
 Using the data collected by the Bus Breakdown and Delay System of OPT, our project focuses on exploratory analyses and anticipation. Within the exploratory analysis, we compare different school bus companies by delay duration, reaction time and work fault. We also compare route services by the odds of notifying and the effect of route planning. Within the anticipation part, we build a model to predict the delay duration. Office of Pupil Transportation would be able to get the expected delay duration with this model and inform the parents who call.
 
+# Data
+
+Our data consist of breakdown and delay information of school buses in New York during 2015-2016, 2016-2017 and 2017-2018 school years (except July, August and September), including 168462 observations of 20 variables about the occur and inform time, delay duration, breakdown and delay reasons, and other operation information. 
+
+It is real time updated and can be downloaded from the NYC Open Data.
+
+Find our data [here].(Bus_Breakdown_and_Delays.csv)
+
+
 # Appraoches
 
 * Clean and prepare the data by string processing and data type converting
@@ -17,4 +26,11 @@ Using the data collected by the Bus Breakdown and Delay System of OPT, our proje
 * Describe the data by barplots, scatter plot over time, boxplots and tables
 
 * Build up a logistics regression model for predicting the duration of delay
+
+# Results
+
+* The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of  inflexibility.
+
+
+
 
