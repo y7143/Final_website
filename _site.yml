@@ -16,4 +16,6 @@ navbar:
       href: https://github.com/WendyThe13th/final-project
 output:
   html_document:
-    theme: journal
+    theme: flatly
+     
+    
