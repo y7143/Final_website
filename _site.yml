@@ -5,11 +5,12 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
-  right:
     - text: "Visualization"
       href: mailto:<you@youremail.com>
+    
+  right:
+    - text: "About"
+      href: about.html
     - text: "Report"
       href: Final_project.html
     - icon: fa-github fa-lg
