@@ -2,6 +2,7 @@
 title: "Operation Status Analysis and Delay Prediction of NYC School Bus "
 ---
 
+
 # Overview of the project 
 
 For many students, school bus is the only available method of transportation to and from school. Improving the operation condition and safety of school bus has always been an important topic. 
@@ -9,6 +10,7 @@ For many students, school bus is the only available method of transportation to 
 The Office of Pupil Transportation(OPT) administers school bus service to New York City schools for students attending both public and non-public schools, and it aims to use the Bus Breakdown and Delay system to inform parents who call with questions regarding bus service. The Bus Breakdown and Delay system collects information from school bus vendors operating out in the field in real time about the occur and inform time, delay duration, breakdown and delay reasons, and other operation information.
 
 Using the data collected by the Bus Breakdown and Delay System of OPT, our project focuses on exploratory analyses and anticipation. Within the exploratory analysis, we compare different school bus companies by delay duration, reaction time and work fault. We also compare route services by the odds of notifying and the effect of route planning. Within the anticipation part, we build a model to predict the delay duration. Office of Pupil Transportation would be able to get the expected delay duration with this model and inform the parents who call.
+
 
 # Data
 
@@ -27,6 +29,7 @@ Find our data [here](Bus_Breakdown_and_Delays.csv).
 
 * Build up a logistics regression model for predicting the duration of delay
 
+
 # Results
 
 * The school bus delay occurs mainly focucs on 7:00-8:00am and 2:00-3:00pm, which are the commonsensible rush hours. 
@@ -37,8 +40,12 @@ Find our data [here](Bus_Breakdown_and_Delays.csv).
 
 * Accident and mechanical problem tend to cause the longest delay duration while delayed by school and heavy traffic tend to have the shortest delay duration.
 
+* After comparison, we find that “FORTUNA BUS COMPANY” has the longest reaction time of three and a half hours, following are “R & C TRANSIT, INC.”, “SMART PICK” and “PENNY TRANSPORTATION”(2 hours and 1 hour, respectively).
+
+* The ratio of work faults(reaction time is negative or more than one day) is quite small generally. The company “IC BUS INC.” has the largest ratio of work faults, followed by “GRANDPA`S BUS CO., INC.” and “ACME BUS CORP.”.
+
 * The route service for Pre-K has a much higher odds of notifying and shorter average delay duration because of running late compared to School-Age. Route planning has a negative effect on the school bus arriving in time because of inflexibility.
 
-* The precidted accuracies of 10 samples we created is showed above. We can see the the prediction accuracy is around 62%.
+* In our logistics regression model. Based on some predictors we chosen, we can predict the range of duration of delay when we have the information of necessary predictors.And our model has prediction accuracy of apporximately 62%.
 
 
